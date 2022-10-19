@@ -3,4 +3,9 @@ body {
   color: #6b7280;
   padding: 0;
   margin: 0;
+  background-image: url('./assets/background.jpg');
+  background-size: 100%;
 }
+/* TODO */
+/* Lighten the image in editor */
+/* background-color: #f9fafb; */
