@@ -5,9 +5,14 @@
   height: 100px;
   align-items: center;
   background: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 ul {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 li {
   display: inline-block;
