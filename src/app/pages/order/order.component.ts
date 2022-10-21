@@ -16,20 +16,17 @@ export class OrderComponent implements OnInit {
   selectTab(tab: string) {
     this.selectedTab = tab;
   }
-  selectedLocation(valueEmitted: locationModel[]) {
-    valueEmitted.forEach((location) => {
-      if (
-        !this.selectedLocations.includes(location) &&
-        location !== undefined
-      ) {
-        this.selectedLocations.push(location);
-      }
-    });
+  selectedLocation(valueEmitted: locationModel) {
+    if (
+      !this.selectedLocations.includes(valueEmitted) &&
+      valueEmitted !== undefined
+    ) {
+      this.selectedLocations.push(valueEmitted);
+    }
   }
-  removeSelectedLocation() {
-    // TO DO
-    // Dont forget to manage child array when removed
-    // Maybe refractor child to send single location instead of whole array.
+
+  removeSelectedLocation(i: number) {
+    this.selectedLocations.splice(i, 1);
   }
 }
 // TO DO ! OFFLOAD
@@ -40,6 +37,6 @@ export interface locationModel {
   state: string;
   zip: string;
   product: string;
-  qty: string;
-  distance?: string;
+  distance?: number;
+  quantity: number;
 }

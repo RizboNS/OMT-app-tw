@@ -134,6 +134,10 @@ input, select, .btn-form {
   width: 100px;
   min-width: 100px;
 }
+.xsm {
+  width: 50px;
+  min-width: 25px;
+}
 .row-title {
   padding-bottom: 0.3rem;
   border-bottom: solid 1px #e5e7eb;

@@ -1,5 +1,5 @@
 table {
-  width: 100%;
+  width: 98%;
   border-collapse: collapse;
 }
 table, th, td {
@@ -16,4 +16,19 @@ tr:hover:not(:first-child) {
 }
 .selected-row {
   background-color: #e5e7eb;
+}
+.add-btn-container {
+  position: relative;
+}
+.add-btn-table {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -20px;
+  right: -25px;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 1.1rem;
 }

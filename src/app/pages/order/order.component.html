@@ -224,7 +224,10 @@
         </div>
       </div>
       <div class="row-title">Selected Stocking Location</div>
-      <div class="form-row" *ngFor="let location of selectedLocations">
+      <div
+        class="form-row"
+        *ngFor="let location of selectedLocations; let i = index"
+      >
         <div class="form-box">
           <label>Id</label>
           <input type="text" readonly [value]="location.id" />
@@ -245,11 +248,21 @@
           <label>Zip</label>
           <input type="text" readonly [value]="location.zip" />
         </div>
+        <div class="form-box xsm">
+          <label>Qty.</label>
+          <input type="text" readonly [value]="location.quantity" />
+        </div>
         <div class="form-box sm">
           <label>Distance (m)</label>
           <input type="text" readonly [value]="location.distance" />
         </div>
-        <button type="button" class="btn-form cancel">Remove</button>
+        <button
+          type="button"
+          class="btn-form cancel"
+          (click)="removeSelectedLocation(i)"
+        >
+          Remove
+        </button>
       </div>
     </div>
     <div class="form-footer">
