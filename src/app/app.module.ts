@@ -7,9 +7,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './pages/login/login.component';
 import { OrderComponent } from './pages/order/order.component';
 import { OrderCreateComponent } from './pages/order-create/order-create.component';
+import { SlTableComponent } from './components/sl-table/sl-table.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, LoginComponent, OrderComponent, OrderCreateComponent],
+  declarations: [AppComponent, HeaderComponent, LoginComponent, OrderComponent, OrderCreateComponent, SlTableComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

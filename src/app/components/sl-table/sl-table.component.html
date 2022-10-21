@@ -1,0 +1,25 @@
+<table>
+  <tr>
+    <th class="th">Address</th>
+    <th class="th">City</th>
+    <th class="th">State</th>
+    <th class="th">Zip</th>
+    <th class="th">Product</th>
+    <th class="th">Quantity</th>
+  </tr>
+  <tr
+    *ngFor="let sl of stockingLocations; let i = index"
+    (click)="selectedRow(i)"
+    [ngClass]="{ 'selected-row': i === selectedRowIndex }"
+  >
+    <td>{{ sl.address }}</td>
+    <td>{{ sl.city }}</td>
+    <td>{{ sl.state }}</td>
+    <td>{{ sl.zip }}</td>
+    <td>{{ sl.product }}</td>
+    <td>{{ sl.qty }}</td>
+  </tr>
+</table>
+<button type="button" class="btn-form" (click)="appendSelectedLocation()">
+  Add
+</button>
