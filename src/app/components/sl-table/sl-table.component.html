@@ -11,8 +11,7 @@
   </tr>
   <tr
     *ngFor="let sl of stockingLocations; let i = index"
-    (click)="selectedRow(i)"
-    (dblclick)="appendSelectedLocation(i)"
+    (click)="appendSelectedLocation(i)"
     [ngClass]="{ 'selected-row': i === selectedRowIndex }"
   >
     <td>{{ sl.id }}</td>

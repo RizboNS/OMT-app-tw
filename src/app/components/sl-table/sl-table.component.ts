@@ -56,9 +56,7 @@ export class SlTableComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-  selectedRow(i: number) {
-    this.selectedRowIndex = i;
-  }
+
   appendSelectedLocation(i: number) {
     this.selectedLocation = this.stockingLocations[i];
     this.selectedLocationEmiter.emit(this.selectedLocation);

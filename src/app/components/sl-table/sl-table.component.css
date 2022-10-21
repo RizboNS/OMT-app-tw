@@ -14,9 +14,7 @@ tr {
 tr:hover:not(:first-child) {
   background-color: #e5e7eb;
 }
-.selected-row {
-  background-color: #e5e7eb;
-}
+
 .add-btn-container {
   position: relative;
 }
