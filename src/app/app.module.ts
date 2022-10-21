@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './pages/login/login.component';
 import { OrderComponent } from './pages/order/order.component';
+import { OrderCreateComponent } from './pages/order-create/order-create.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, LoginComponent, OrderComponent],
+  declarations: [AppComponent, HeaderComponent, LoginComponent, OrderComponent, OrderCreateComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

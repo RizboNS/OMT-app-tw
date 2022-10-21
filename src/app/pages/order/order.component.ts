@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order.component.css'],
 })
 export class OrderComponent implements OnInit {
-  tabs: string[] = ['All', 'Status', 'Customer', 'Product', 'Ship from'];
+  tabs: string[] = ['All', 'Status', 'Customer', 'Cart', 'Ship from'];
   selectedTab: string = this.tabs[0];
+  products = [{}];
   constructor() {}
 
   ngOnInit(): void {}
