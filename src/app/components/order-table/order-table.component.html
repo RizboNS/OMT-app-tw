@@ -1,0 +1,28 @@
+<table>
+  <tr>
+    <th (click)="sort('id')">id</th>
+    <th (click)="sort('address')">Address</th>
+    <th (click)="sort('city')">City</th>
+    <th (click)="sort('state')">State</th>
+    <th (click)="sort('zip')">Zip</th>
+    <th (click)="sort('product')">Product</th>
+    <th (click)="sort('quantity')">Quantity</th>
+    <th (click)="sort('distance')">Distance(m)</th>
+  </tr>
+  <tr
+    *ngFor="let sl of stockingLocations; let i = index"
+    (click)="appendSelectedLocation(i)"
+    [ngClass]="{ 'selected-row': i === selectedRowIndex }"
+  >
+    <td>{{ sl.id }}</td>
+    <td>{{ sl.address }}</td>
+    <td>{{ sl.city }}</td>
+    <td>{{ sl.state }}</td>
+    <td>{{ sl.zip }}</td>
+    <td>{{ sl.product }}</td>
+    <td>{{ sl.quantity }}</td>
+    <td>
+      {{ sl.distance }}
+    </td>
+  </tr>
+</table>

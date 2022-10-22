@@ -1,0 +1,17 @@
+table {
+  width: 98%;
+  margin: auto;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid #e5e7eb;
+}
+th {
+  text-align: start;
+}
+tr {
+  cursor: pointer;
+}
+tr:hover:not(:first-child) {
+  background-color: #e5e7eb;
+}
