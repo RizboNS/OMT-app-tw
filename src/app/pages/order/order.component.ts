@@ -10,6 +10,7 @@ export class OrderComponent implements OnInit {
   selectedTab: string = this.tabs[0];
   products = [{}];
   selectedLocations: locationModel[] = [];
+
   constructor() {}
 
   ngOnInit(): void {}

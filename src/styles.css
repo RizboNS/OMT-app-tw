@@ -199,3 +199,6 @@ input, select, .btn-form {
   border-bottom: 5px solid #4f46e5;
   transition: ease-in 0.5s;
 }
+.readonly {
+  background-color: #e5e7eb;
+}

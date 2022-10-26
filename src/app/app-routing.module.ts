@@ -8,7 +8,7 @@ import { OrderComponent } from './pages/order/order.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'orders', component: OrderComponent },
+  { path: 'orders/:by', component: OrderComponent },
   { path: 'find-order', component: OrderComponent },
   { path: 'order-create', component: OrderCreateComponent },
   { path: 'create-product', component: CreateProductComponent },

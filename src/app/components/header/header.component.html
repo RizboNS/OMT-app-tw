@@ -4,19 +4,19 @@
       <li>
         <span class="brand">OMT</span>
       </li>
-      <li>
-        <a routerLink="order-create" routerLinkActive="active">Create Order</a>
+      <li class="dropdown">
+        <a class="drop-btn">Order</a>
+        <div class="dropdown-content">
+          <a routerLink="order-create" routerLinkActive="active">Create</a>
+          <a routerLink="find-order" routerLinkActive="active">Find</a>
+        </div>
       </li>
-      <li>
-        <a routerLink="find-order" routerLinkActive="active">Find Order</a>
-      </li>
-      <li>
-        <a routerLink="create-product" routerLinkActive="active"
-          >Create Product</a
-        >
-      </li>
-      <li>
-        <a routerLink="find-product" routerLinkActive="active">Find Product</a>
+      <li class="dropdown">
+        <a class="drop-btn">Product</a>
+        <div class="dropdown-content">
+          <a routerLink="create-product" routerLinkActive="active">Create</a>
+          <a routerLink="find-product" routerLinkActive="active">Find</a>
+        </div>
       </li>
     </ul>
   </nav>
